@@ -20,9 +20,9 @@
                 <img :src="image">
             </div>
             <div class="product-info">
-                <h1> <a v-bind:href="link">{{ product }}</a></h1>
+                <h1> <a v-bind:href="link">{{product }}</a></h1>
 
-                <h1>{{ foodinfo }}</h1>
+                <h1>{{info }}</h1>
 
                 <p v-if="inventory > 10 ">In Stock </p>
                 <p v-else-if="inventory <= 10 && inventory > 0 ">In Stock </p>
@@ -32,8 +32,7 @@
                 </ul>
                 <p> {{size}}</p>
                 <div v-for="variant in variants" :key="variant.id" @mouseover="updateImage(variant.image)">{{ variant.color}}</div>
-                //Add to cart button
-                <button class=" button " @click="addToCart">Add to Cart</button>
+                <button class=" button " @click="addToCart">Add to Cart</button> //Add to cart button
                 <br>
                 <button class="button" @click="changeStatus">Change</button>
             </div>
