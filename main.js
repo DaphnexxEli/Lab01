@@ -5,6 +5,7 @@ const app = Vue.createApp({
             product: 'Shoes',
             info: 'RED ',
             image: './assets/images/socks_green.jpg',
+            //3.6
             link: 'http://www.camt.cmu.ac.th/index.php/th/',
             inStock: true,
             inventory: 100,
@@ -14,9 +15,11 @@ const app = Vue.createApp({
                 { id: 2235, color: 'blue', image: './assets/images/socks_blue.jpg' }
 
             ],
+            //5.4
             size: ['Size = S,M,L'],
             cart: 0,
-            count: 0
+            count: 0,
+            onsale: true
 
 
         }
